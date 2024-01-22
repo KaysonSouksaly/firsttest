@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate</title>
+</head>
+<body>
+    <form name="Information" action="Personal.php" method="post">
+    <!--I made many forms in my code for each input element. But i decided to do 1 form that contain all input element
+        for practicality and cleanliness.-->
+        <article style="border: 1px solid; padding: 20px; margin-right: 1000px;">
+            <!--
+                I change the style of the article to have aborder, padding so that the element stick on the side
+                and margin to make the border squared.-->
+            Your details
+            <p>Name:   
+            <input type="text" name="email">
+            <br>
+            E-mail:
+            <input type="text" name="email">
+            </p>
+        </article>
+    <br>
+        <article style="border: 1px solid; padding: 20px; margin-right: 1000px;">
+            <div>
+            Your Review 
+            <br><br>
+            <!--Drop down section-->
+            How did you hear of us?
+            <select name="Found">
+                <option value="F1">Google</option>
+                <option value="F2">Magazines</option>
+                <option value="F3">Friends</option>
+                <option value="F4">Other</option>
+            </select>
+            <br><br>
+            <!--Radio / single check section-->
+            Would you visit us again?
+            <br><br>
+
+            <input type="radio" name="answer" value="YEs">
+            <label for="answer1">Yes</label>
+            <input type="radio" name="answer" value="No" checked>
+            <label for="answer2">No</label>
+            <input type="radio" name="answer" value="Maybe">
+            <label for="answer3">Maybe</label>
+            </div>
+
+            <div>
+            <!--Comment section-->
+            Comments : 
+            <br>
+            <textarea rows="10" cols="50" name="comments" placeholder="Please enter your comment here"></textarea>
+            <br>
+            <!--Check box section-->
+            <input type="checkbox" name="topping1" value="pepperoni35"> Sign me up for email address
+            <br>
+        
+            <input type="submit" id="submit" value="Submit Review">
+            </div>
+        </article>
+    </form>
+    <li>
+        <ul>
+            
+        </ul>
+    </li>
+ </body>
+ </html>
